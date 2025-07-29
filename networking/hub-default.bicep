@@ -132,4 +132,5 @@ resource hubFw 'Microsoft.Network/azureFirewalls@2023-04-01' = {
     hubVnet
     defaultFwPip
   ]
+output hubVnetId string = hubVnet.id
 }
